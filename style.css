@@ -58,3 +58,9 @@ header img{
     }
     
 }
+.correto{
+    color: green;
+}
+.errado{
+    color: red;
+}
