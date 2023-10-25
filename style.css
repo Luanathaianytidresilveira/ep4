@@ -1,6 +1,6 @@
 header{
     grid-area: cabe;
-    background-color: rgba(162, 104, 255, 0.726);
+    background-image: linear-gradient(to right, rgba(162, 104, 255, 0.726) , rgba(110, 5, 145, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
 }
 main{
     grid-area: prin;
@@ -8,7 +8,7 @@ main{
 }
 footer{
     grid-area: roda;
-    background-color: rgba(162, 104, 255, 0.726);;
+    background-image: linear-gradient(to right, rgba(162, 104, 255, 0.726) , rgba(110, 5, 145, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
 }
 body{
     display: grid;
@@ -16,7 +16,7 @@ body{
     "cabe cabe"
     "prin prin"
     "roda roda";
-    grid-template-rows: 200px 500px 200px;
+    grid-template-rows: auto;
     grid-template-columns: 300px auto;
 }
 header img{
@@ -32,7 +32,10 @@ header img{
         grid-template-columns: 1fr;
         grid-template-rows: 200px 50px 500px 200px;
     }   
-    header img{
+    footer img{
+        display: none;
+    }
+    footer{
         display: none;
     } 
 }
@@ -60,11 +63,26 @@ header img{
     color: red;
 }
 .vargas{
-    width: 26%;
-    border-radius: 5%;
+    width: 200px;
+    border-radius: 20%;
+    margin: 15px;
+}
+.vargas1{
+    width: 250px;
+    border-radius: 20%;
+    margin: 15px;
 }
 .botao{
     border-radius: 10%;
     box-shadow: 5px 10px 15px rgb(184, 30, 240);
     width: 18%;
+    font-size: large;
+    margin-top: 24px;
+    margin: 24px;
+}
+.cor{
+    color: rgb(186, 138, 232);
+}
+.letra{
+    font-style: italic;
 }
