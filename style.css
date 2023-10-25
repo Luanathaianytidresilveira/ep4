@@ -8,12 +8,7 @@ main{
 }
 footer{
     grid-area: roda;
-    background-color: black;
-}
-section{
-    grid-area: secn;
-    background-color: aquamarine;
-    display: none;
+    background-color: rgba(162, 104, 255, 0.726);;
 }
 body{
     display: grid;
@@ -44,7 +39,7 @@ header img{
 @media only screen and (max-width: 480px) {
     body{
         grid-template-areas: 
-        "secn"
+        "cabe"
         "prin"
         "roda";
         grid-template-columns: 1fr;
@@ -61,6 +56,15 @@ header img{
 .correto{
     color: green;
 }
-.errado{
+.errada{
     color: red;
+}
+.vargas{
+    width: 26%;
+    border-radius: 5%;
+}
+.botao{
+    border-radius: 10%;
+    box-shadow: 5px 10px 15px rgb(184, 30, 240);
+    width: 18%;
 }
