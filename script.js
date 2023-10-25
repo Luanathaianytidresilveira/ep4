@@ -17,65 +17,70 @@ function botao_resposta() {
             document.getElementById("resultado_1").innerHTML = "acertou";
         }
         else{
-            document.getElementById("resultado_1").innerHTML = "errou";
+            document.getElementById("errada1").innerHTML = "errada";
         }
         if(respostausuario2.value === "correta"){
             document.getElementById("resultado_2").innerHTML = "acertou";
         }
         else{
-            document.getElementById("resultado_2").innerHTML = "errou";
+            document.getElementById("errada2").innerHTML = "errada";
         }
         if(respostausuario3.value === "correta"){
             document.getElementById("resultado_3").innerHTML = "acertou";
         }
         else{
-            document.getElementById("resultado_3").innerHTML = "errou";
+            document.getElementById("errada3").innerHTML = "errada";
         }
         if(respostausuario4.value === "correta"){
             document.getElementById("resultado_4").innerHTML = "acertou";
         }
         else{
-            document.getElementById("resultado_4").innerHTML = "errou";
+            document.getElementById("errada4").innerHTML = "errada";
         }
         if(respostausuario5.value === "correta"){
             document.getElementById("resultado_5").innerHTML = "acertou";
         }
         else{
-            document.getElementById("resultado_5").innerHTML = "errou";
+            document.getElementById("errada5").innerHTML = "errada";
         }
         if(respostausuario6.value === "correta"){
             document.getElementById("resultado_6").innerHTML = "acertou";
         }
         else{
-            document.getElementById("resultado_6").innerHTML = "errou";
+            document.getElementById("errada6").innerHTML = "errada";
         }
         if(respostausuario7.value === "correta"){
             document.getElementById("resultado_7").innerHTML = "acertou";
         }
         else{
-            document.getElementById("resultado_7").innerHTML = "errou";
+            document.getElementById("errada7").innerHTML = "errada";
         }
         if(respostausuario8.value === "correta"){
             document.getElementById("resultado_8").innerHTML = "acertou";
         }
         else{
-            document.getElementById("resultado_8").innerHTML = "errou";
+            document.getElementById("errada8").innerHTML = "errada";
         }
         if(respostausuario9.value === "correta"){
             document.getElementById("resultado_9").innerHTML = "acertou";
         }
         else{
-            document.getElementById("resultado_9").innerHTML = "errou";
+            document.getElementById("errada9").innerHTML = "errada";
         }
         if(respostausuario10.value === "correta"){
             document.getElementById("resultado_10").innerHTML = "acertou";
         }
         else{
-            document.getElementById("resultado_10").innerHTML = "errou";
+            document.getElementById("errada10").innerHTML = "errada";
         }
     }
     else{
-        alert("Não deixar questões em berto!");
+        alert("Não deixar questões em aberto!");
     }
-    
+}
+function ola_usuario(){
+    var nome_usu = prompt ("Escreva seu nome:");
+    if(nome_usu){
+        document.getElementById("nome_usuario").innerHTML = nome_usu;
+    }
 }
