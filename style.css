@@ -4,7 +4,7 @@ header{/*cabeçario*/
 }
 main{/*parte principal*/
     grid-area: prin;
-    background-color: rgba(255, 255, 255, 0.5);/*cor transparente sobre imagem de fundo*/
+    background-color: rgba(110, 109, 109, 0.5);/*cor transparente sobre imagem de fundo*/
 }
 footer{/*rodapé*/
     grid-area: roda;
@@ -20,9 +20,8 @@ body{/*corpo do texto*/
     grid-template-columns: 300px auto;/*indica tamanho das colunas*/
 }
 header img{/*logo*/
-    height: 150px;/*altura*/
-    width: auto;/*tamanho*/
-    display: flex;
+    height: auto;/*altura*/
+    min-width: 300px;/*tamanho*/
 }
 @media only screen and (max-width: 820px) {/*para deixar responsivo*/
     body{
@@ -31,7 +30,7 @@ header img{/*logo*/
         "prin"
         "roda";
         grid-template-columns: 1fr;/*indica tamanho das colunas*/
-        grid-template-rows: 200px auto 200px;/*indica tamanho das linhas*/
+        grid-template-rows: auto auto 200px;/*indica tamanho das linhas*/
     }   
     footer img{
         display: none;/*nao mostrar a imagem do footer*/
@@ -39,6 +38,29 @@ header img{/*logo*/
     footer{
         display: none;/*nao mostrar o rodape*/
     } 
+    .vargas{/*imagem logo cabeçalho*/
+        min-width: 300px;
+    }
+}
+@media only screen and (max-width: 530px) {/*para deixar responsivo*/
+    body{
+        grid-template-areas: 
+        "cabe"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;/*indica tamanho das colunas*/
+        grid-template-rows: auto auto 100px;/*indica tamanho das linhas*/
+    }   
+    footer img{
+        display: none;/*nao mostrar a imagem do footer*/
+    }
+    footer{
+        display: none;/*nao mostrar o rodape*/
+    } 
+    .vargas{/*imagem logo cabeçalho*/
+        min-width: 300px;
+    }
+
 }
 @media only screen and (max-width: 480px) {/*responsivo para celular*/
     body{
@@ -46,7 +68,7 @@ header img{/*logo*/
         "cabe"
         "prin";
         grid-template-columns: 1fr;
-        grid-template-rows: 100px auto;
+        grid-template-rows: auto auto;
     }
     section{
         display: flex;
@@ -54,22 +76,39 @@ header img{/*logo*/
     footer{
         display: none;/*nao mostrar o rodape*/
     }  
+    .vargas{/*imagem logo cabeçalho*/
+        min-width: 300px;
+    }
 }
 .correto{/*cor certa*/
     color: green;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 1s;
+    border-bottom: 5px;
+    max-width: 400px;
 }
 .errada{/*cor errada*/
     color: red;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 1s;
+    border-bottom: 5px;
+    max-width: 400px;
 }
 .vargas{/*imagem logo cabeçalho*/
-    width: 200px;
-    border-radius: 20%;
-    margin: 15px;
+    width: 15%;
+    height: auto;
+    border-radius: 6%;
+    margin: 2%;
 }
 .vargas1{/*imagem logo rodape*/
-    width: 250px;
-    border-radius: 20%;
-    margin: 15px;
+    width: 15%;
+    height: auto;
+    border-radius: 6%;
+    margin: 2%;
 }
 .botao{/* dimensoes do botao*/
     border-radius: 10%;
@@ -80,11 +119,8 @@ header img{/*logo*/
     margin: 24px;
 }
 .cor{
-    color: rgb(186, 138, 232);/*cor dos titulos*/
+    color: rgb(132, 19, 238);/*cor dos titulos*/
 }
 .letra{
     font-style: italic;/* fonte da letra*/
-}
-.fundo2{
-    background-image: url(imagem/fundo2.jpg);/*fundo do site*/
 }
