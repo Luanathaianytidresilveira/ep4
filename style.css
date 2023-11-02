@@ -1,6 +1,6 @@
 header{/*cabeçario*/
     grid-area: cabe;
-    background-image: linear-gradient(to right, rgba(162, 104, 255, 0.726) , rgba(110, 5, 145, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
+    background-image: linear-gradient(to right, rgba(106, 140, 255, 0.726) , rgba(1, 34, 204, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
 }
 main{/*parte principal*/
     grid-area: prin;
@@ -8,7 +8,7 @@ main{/*parte principal*/
 }
 footer{/*rodapé*/
     grid-area: roda;
-    background-image: linear-gradient(to right, rgba(162, 104, 255, 0.726) , rgba(110, 5, 145, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
+    background-image: linear-gradient(to right, rgba(106, 140, 255, 0.726) , rgba(1, 34, 204, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
 }
 body{/*corpo do texto*/
     display: grid;/*disposiçao grid*/
@@ -81,22 +81,24 @@ header img{/*logo*/
     }
 }
 .correto{/*cor certa*/
-    color: green;
+    color: rgb(98, 245, 7);
     background-color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     transition: 1s;
     border-bottom: 5px;
     max-width: 400px;
+    margin-left: 32%;
 }
 .errada{/*cor errada*/
-    color: red;
+    color: rgb(253, 2, 2);
     background-color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.1rem;
     transition: 1s;
     border-bottom: 5px;
     max-width: 400px;
+    margin-left: 32%;
 }
 .vargas{/*imagem logo cabeçalho*/
     width: 15%;
@@ -112,15 +114,24 @@ header img{/*logo*/
 }
 .botao{/* dimensoes do botao*/
     border-radius: 10%;
-    box-shadow: 5px 10px 15px rgb(184, 30, 240);
+    box-shadow: 5px 10px 15px rgb(30, 40, 240);
     width: 18%;
     font-size: large;
     margin-top: 24px;
     margin: 24px;
+    margin-left: 32%;
 }
 .cor{
-    color: rgb(132, 19, 238);/*cor dos titulos*/
+    color: rgb(23, 47, 223);/*cor dos titulos*/
+    margin-left: 32%;
 }
 .letra{
     font-style: italic;/* fonte da letra*/
+    margin-left: 32%;
+}
+.titulo{
+    margin-left: 32%;
+}
+.pergunta{
+    margin-left: 32%;
 }
