@@ -14,7 +14,7 @@ function botao_resposta() {
     if(respostausuario1 && respostausuario2 && respostausuario3 && respostausuario4 && respostausuario5 && respostausuario6 && respostausuario7 && respostausuario8 && respostausuario9 && respostausuario10){
         
         if(respostausuario1.value === "correta"){
-            document.getElementById("resultado_1").innerHTML = "acertou!!! Parabens";
+            document.getElementById("resultado_1").innerHTML = "acertous!!! Parabens";
         }
         else{
             document.getElementById("errada1").innerHTML = "errada!!! A resposta certa é a C. Um político que exerceu a presidência do Brasil em duas ocasiões.";
